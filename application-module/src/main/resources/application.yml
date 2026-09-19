@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai_sonar_fix_assistant
+    username: postgres
+    password: postgres
+
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      max-lifetime: 600000        # 10 minutes
+      idle-timeout: 120000        # 2 minutes
+      connection-timeout: 30000
+      validation-timeout: 5000
+  flyway:
+    enabled: false
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3:latest
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your-email@gmail.com
+    password: your-app-password
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret: MyVerySecureSecretKeyForSonarFixAssistant2026
+  expiration: 86400000
+logging:
+  file:
+    name: logs/application.log
+  level:
+    root: INFO
+    org.ai: DEBUG
+    org.flywaydb: DEBUG
+    org.springframework.web: INFO
+
+sonar:
+  url: http://localhost:9000
+  token: squ_bcdbca6f900842bda1aa7ba963c593d165d126b5
+
+
+report:
+  notification-emails:
+    banking-api:
+      - team1@company.com
+      - manager1@company.com
+
+    payment-service:
+      - team2@company.com
+
+    customer-service:
+      - architect@company.com
+      - lead@company.com

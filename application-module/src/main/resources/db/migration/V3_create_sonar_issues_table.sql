@@ -1,0 +1,13 @@
+CREATE TABLE projects
+(
+    id BIGSERIAL PRIMARY KEY,
+
+    project_key VARCHAR(255) UNIQUE,
+
+    project_name VARCHAR(255),
+
+    qualifier VARCHAR(50),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

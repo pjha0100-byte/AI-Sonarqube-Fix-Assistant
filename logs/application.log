@@ -1,0 +1,44 @@
+2026-07-26T06:24:10.302Z  INFO 8932 --- [application-module] [main] o.a.a.AiSonarqubeFixAssistantApplication : Starting AiSonarqubeFixAssistantApplication using Java 21.0.11 with PID 8932 (E:\ai_sonarqube\demo\application-module\target\classes started by Pranav in E:\ai_sonarqube\demo)
+2026-07-26T06:24:10.365Z DEBUG 8932 --- [application-module] [main] o.a.a.AiSonarqubeFixAssistantApplication : Running with Spring Boot v3.5.0, Spring v6.2.7
+2026-07-26T06:24:10.379Z  INFO 8932 --- [application-module] [main] o.a.a.AiSonarqubeFixAssistantApplication : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T06:24:20.261Z  INFO 8932 --- [application-module] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26T06:24:24.109Z  INFO 8932 --- [application-module] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3738 ms. Found 4 JPA repository interfaces.
+2026-07-26T06:24:37.613Z  INFO 8932 --- [application-module] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-26T06:24:37.696Z  INFO 8932 --- [application-module] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-26T06:24:37.698Z  INFO 8932 --- [application-module] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-07-26T06:24:38.597Z  INFO 8932 --- [application-module] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-26T06:24:38.612Z  INFO 8932 --- [application-module] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 27077 ms
+2026-07-26T06:24:40.409Z  INFO 8932 --- [application-module] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26T06:24:40.906Z  INFO 8932 --- [application-module] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-07-26T06:24:41.154Z  INFO 8932 --- [application-module] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-26T06:24:43.796Z  INFO 8932 --- [application-module] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26T06:24:44.137Z  INFO 8932 --- [application-module] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-26T06:24:45.966Z  INFO 8932 --- [application-module] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f3361e9
+2026-07-26T06:24:45.973Z  INFO 8932 --- [application-module] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-26T06:24:46.737Z  INFO 8932 --- [application-module] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-26T06:24:53.039Z  INFO 8932 --- [application-module] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26T06:24:54.867Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-07-26T06:24:54.869Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk97v6ngaptdltge07sckno1fba" of relation "projects" does not exist, skipping
+2026-07-26T06:24:54.911Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-07-26T06:24:54.912Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uki298lv2nhyg2w5gch2xdujawb" of relation "sonar_issues" does not exist, skipping
+2026-07-26T06:24:54.937Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-07-26T06:24:54.938Z  WARN 8932 --- [application-module] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2026-07-26T06:24:54.967Z  INFO 8932 --- [application-module] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26T06:24:57.113Z DEBUG 8932 --- [application-module] [main] o.a.a.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-26T06:24:58.606Z  INFO 8932 --- [application-module] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26T06:25:07.412Z  INFO 8932 --- [application-module] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-07-26T06:25:07.483Z  WARN 8932 --- [application-module] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26T06:25:10.300Z  INFO 8932 --- [application-module] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-26T06:25:10.353Z  INFO 8932 --- [application-module] [main] o.a.a.AiSonarqubeFixAssistantApplication : Started AiSonarqubeFixAssistantApplication in 66.935 seconds (process running for 94.475)
+2026-07-26T06:31:15.365Z  INFO 8932 --- [application-module] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-26T06:31:15.409Z  INFO 8932 --- [application-module] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-26T06:31:15.434Z  INFO 8932 --- [application-module] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26T06:31:15.442Z  INFO 8932 --- [application-module] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-26T06:31:15.468Z  INFO 8932 --- [application-module] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
