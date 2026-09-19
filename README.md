@@ -97,4 +97,4 @@ GET /api/reports/pdf/{projectKey}
 ## Author
 
 Pranav Kumar Jha
-Senior Java Developer
+Senior Java Developer# AI-Sonarqube-Fix-Assistant
